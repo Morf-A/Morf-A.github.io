@@ -23,6 +23,8 @@
         y         = 10,
         target    = null;
 
+        elemetnPng = $('<img src=element.png>');
+        targetPng  = $('<img src=target.png>');
     
     direction  = {
         queue: [],
@@ -78,11 +80,11 @@
 	}
 	
 	function setCell(x,y){
-		$($('td')[sizeX*y+x]).append('<img src=element.png>');
+		$($('td')[sizeX*y+x]).append(elemetnPng);
 	}
 	
 	function setTargetSell(x,y){
-        $($('td')[sizeX*y+x]).append('<img src=target.png>');
+        $($('td')[sizeX*y+x]).append(targetPng);
 	}
 	
 	function unsetCell(x,y){
@@ -156,6 +158,7 @@
 	
 </head>
 <body>
+    test
 	<table>
 	</table>
 </body>
